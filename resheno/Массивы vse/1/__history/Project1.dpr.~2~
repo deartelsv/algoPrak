@@ -1,0 +1,35 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+//1.	В массиве хранятся сведения о стоимости 12 различных предметов. Определить общую стоимость всех предметов.
+//a.	Удалить первый отрицательный элемент в 10 элементном массиве.
+uses
+  System.SysUtils;
+
+var
+    ar:array[1..12] of Integer;
+    ar1:array[1..10] of Integer;
+    i,sum:Integer;
+begin
+  writeln('Введите 12 чисел');
+  for i := 1 to length(ar) do begin
+    read(ar[i]);
+    sum := sum + ar[i];
+  end;
+  writeln('itogo: ', sum);
+  readln;
+  readln;
+  //a
+  writeln('Введите 10 чисел');
+  for i := 1 to length(ar1) do begin
+    read(ar1[i]);
+    if (ar1[i] < 0) then
+      ar1[i] := 0
+    else
+      write(ar1[i] , ' ');
+  end;
+  readln;
+  readln;
+end.

@@ -1,0 +1,32 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+//—оставить программу, котора€ в зависимости от пор€дкового номера мес€ца
+//(1, 2.....12) выводит на экран количество дней в этом мес€це.
+uses
+  System.SysUtils;
+
+var
+  a:Integer;
+begin
+write('¬ведите мес€ц ');
+readln(a);
+case a of
+1: writeln('31');
+2: writeln('28');
+3: writeln('31');
+4: writeln('30');
+5: writeln('31');
+6: writeln('30');
+7: writeln('31');
+8: writeln('31');
+9: writeln('30');
+10: writeln('31');
+11: writeln('30');
+12: writeln('31');
+else writeln('не то число');
+end;
+readln;
+end.

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Programirovanie moduley</title>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<style type="text/css">
+.style1 {
+				text-align: center;
+}
+.style2 {
+				color: #FFFFFF;
+				font-family: Papyrus;
+				font-size: 45pt;
+}
+.style3 {
+				text-decoration: none;
+}
+.style5 {
+				text-align: center;
+				font-family: Papyrus;
+				font-size: 60px;
+				font-style: normal;
+				font-weight: 400;
+				letter-spacing: normal;
+				text-indent: 0px;
+				text-transform: none;
+				white-space: normal;
+				word-spacing: 0px;
+				display: inline;
+				color: rgb(255, 255, 255);
+}
+</style>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'Button/button29.jpg',/*url*/'Button/button2A.jpg')" style="background-image: url('Pikchi/3.png'); margin-left: 0; margin-right: 0;">
+
+<div class="style1">
+
+<a href="Soderjanie.htm">
+<img style="border: 0" id="img1" src="Button/button28.jpg" height="20" width="100" alt="Назад" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'Button/button29.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'Button/button28.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'Button/button2A.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'Button/button29.jpg')" /><!-- MSComment="ibutton" fp-style="fp-btn: Simple Text 1" fp-title="Назад" --></a>
+
+				<br />
+				<br />
+
+<p class="style5" style="font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none;">
+&nbsp;Практическая работа на тему: &quot;<span lang="ru">Программирование модулей</span>&quot;</p>
+</div>
+<p class="style1" style="height: 94px">
+<a href="Programirovanie%20moduley/Z1.htm" class="style3"><span class="style2">
+Задача 1</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z2.htm" class="style3">
+<span class="style2">Задача 2</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z3.htm" class="style3">
+<span class="style2">Задача 3</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z4.htm" class="style3">
+<span class="style2">Задача 4</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z5.htm" class="style3">
+<span class="style2">Задача 5</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z6.htm" class="style3">
+<span class="style2">Задача 6</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z7.htm" class="style3">
+<span class="style2">Задача 7</span></a><span class="style2"><br />
+</span><a href="Programirovanie%20moduley/Z8.htm" class="style3">
+<span class="style2">Задача 8</span></a><span class="style2"><br />
+</span></p>
+
+</body>
+
+</html>

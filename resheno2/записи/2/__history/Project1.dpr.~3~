@@ -1,0 +1,51 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+type
+user = record
+id:Integer;
+fn:string;
+o:string;
+add:string;
+tel:integer;
+end;
+
+var
+  ar: array[1..25] of user;
+  i:Integer;
+begin
+for i := 1 to length(ar) do begin
+  writeln('User ¹ ', i);
+  ar[i].id := i;
+  write('Lastname: ');
+  readln(ar[i].fn);
+  write('Adress: ');
+  readln(ar[i].add);
+  write('Tel: ');
+  readln(ar[i].tel);
+  while (ar[i].tel.ToString.Length <> 7) do begin
+    writeln('Number is wrong');
+    write('Tel: ');
+    readln(ar[i].tel);
+  end;
+  writeln;
+  end;
+  writeln('                                               ');
+  writeln('=====================Users=====================');
+  writeln('                                               ');
+for i := 1 to length(ar) do begin
+  if(ar[i].tel.ToString.isEmpty) then begin
+    writeln('User # ', ar[i].id);
+    writeln('Lastname: ',ar[i].fn);
+    writeln('Addres: ',ar[i].add);
+    writeln('Cell number: ',ar[i].tel);
+  end;
+end;
+readln;
+end.
+end.
